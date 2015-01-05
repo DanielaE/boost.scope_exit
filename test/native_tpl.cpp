@@ -29,6 +29,9 @@ void tpl_long(
             tval = 1;
             ++t;
             ++tv;
+			(void)tc;
+			(void)tcv;
+			(void)i;
         } BOOST_SCOPE_EXIT_END
 
         BOOST_TEST(t == remember);
@@ -51,6 +54,7 @@ void tpl_vector(
         BOOST_SCOPE_EXIT_TPL( (&vval) (&v) (&vc) ) {
             v.push_back(-Value);
             vval.push_back(Value);
+			(void)vc;
         } BOOST_SCOPE_EXIT_END
 
         BOOST_TEST(v.size() == remember.size());
