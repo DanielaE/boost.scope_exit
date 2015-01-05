@@ -42,6 +42,10 @@
 #include <boost/preprocessor/list/for_each_i.hpp>
 #include <boost/preprocessor/detail/is_unary.hpp>
 
+#ifdef BOOST_MSVC
+#pragma warning(disable: 4003) // not enough actual parameters for macro
+#endif
+
 // PRIVATE/PROTECTED //
 
 // NOTE: AUX prefix and aux namespace mark "private" symbols that shall be used
