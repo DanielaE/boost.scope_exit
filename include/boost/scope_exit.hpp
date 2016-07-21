@@ -44,6 +44,7 @@
 
 #ifdef BOOST_MSVC
 #pragma warning(disable: 4003) // not enough actual parameters for macro
+#pragma warning(disable: 4459) // declaration of 'boost_scope_exit_aux_args' hides global declaration
 #endif
 
 // PRIVATE/PROTECTED //
